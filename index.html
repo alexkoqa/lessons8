@@ -8,7 +8,7 @@
 </head>
 <body>
 	<div class="section-form">
-		<form action="mailto:http://nickblack.pro/send.php" method="POST">
+		<form action="http://nickblack.pro/send.php" method="POST">
 			<fieldset>
 				<legend>Контактная информация</legend>
 					<div class="input-block">
@@ -17,17 +17,17 @@
 					</div>
 
 					<div class="input-block">
-						<input type="text"  name="sname"autocomplete="off"required="">
-						<label>Фамилия</label>
+						<input type="text"  name="sname"autocomplete="off">
+						<label id="label-no-req">Фамилия</label>
 					</div>
 
 					<div class="input-block">
-						<input type="number" name="age" min="1" max="100" autocomplete="off" required="">
+						<input type="number" name="age" min="1" max="100" autocomplete="off">
 						<label>Возраст</label>
 					</div>
 
 					<div class="input-block">
-						<input type="email" name="mail" autocomplete="off" required="" id="input-email">
+						<input type="email" name="mail" autocomplete="off" id="input-email">
 						<label>Почта</label>
 					</div>
 																
@@ -40,7 +40,7 @@
 						<input type="date" name="bday" id="date-width">
 					</div>			
 															
-					<input type="email" required name="mymail" value="alexkoqa@gmail.com" disabled id="text-tr">
+					<input type="email" required name="mymail" value="alexkoqa@gmail.com" readonly id="text-tr">
 					<input type="submit" value="отослать" id="sub-width">
 			</fieldset>
 		</form>
