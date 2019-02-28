@@ -71,7 +71,14 @@ width:20px
 outline:none
 }
 
-label {
+/*input:focus ~ label,
+input:required ~ label{
+top:0;
+font-size:14px;
+color:#1e88e5
+}*/
+
+/*#label-no-req{
 position:absolute;
 pointer-events:none;
 transition:.5s;
@@ -81,7 +88,17 @@ color:#fff;
 font-size:17px
 }
 
-input:focus ~ label,input:valid ~ label {
+input:optional ~ #label-no-req{
+top:0;
+font-size:14px;
+color:#1e88e5
+} */
+
+label {
+position:absolute;
+pointer-events:none;
+transition:.5s;
+top:20px;
 top:0;
 font-size:14px;
 color:#1e88e5
@@ -100,3 +117,4 @@ margin-bottom:10px
 #input-email {
 text-transform:lowercase
 }
+
